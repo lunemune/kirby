@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To my Damian</title>
+    <style>
+        /* Reset some default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Indie Flower', Indie Flower;
+        }
+
+        /* Main page styling */
+        body {
+            background-color: #FFF0F5;
+            color: #4B0082;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 1.5em;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 20px;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            text-decoration: none;
+            color: white;
+            background-color: #FF69B4;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #FF1493;
+        }
+
+        /* Confetti animation */
+        .confetti {
+            position: absolute;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #FF69B4;
+            border-radius: 50%;
+            animation: fall 5s linear infinite;
+        }
+
+        .confetti:nth-child(2) { left: 20%; animation-delay: 1s; background-color: #FFD700; }
+        .confetti:nth-child(3) { left: 40%; animation-delay: 2s; background-color: #98FB98; }
+        .confetti:nth-child(4) { left: 60%; animation-delay: 3s; background-color: #87CEFA; }
+        .confetti:nth-child(5) { left: 80%; animation-delay: 4s; background-color: #FFB6C1; }
+
+        @keyframes fall {
+            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>⊹ 🍰♥ 𝓗𝓪𝓹𝓹𝔂 𝓑𝓲𝓻𝓽𝓱𝓭𝓪𝔂 𝓜𝔂 𝓢𝔀𝓮𝓮𝓽 𝓑𝓸𝔂 ♥🍰♡</h1>
+    <p class="message">I love you so much more than anything in this world and you deserve so much! 🥳</p>
+    
+    <div class="button-container">
+        <a href="#" class="button">Celebrate!</a>
+    </div>
+
+    <!-- Confetti effect -->
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+</body>
+</html>
