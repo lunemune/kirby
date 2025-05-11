@@ -1,0 +1,7 @@
+# Define the start and current date
+start_date = date(2024, 12, 31)
+current_date = date(2025, 2, 17)
+
+# Calculate the difference in days
+days_difference = (current_date - start_date).days
+days_difference
